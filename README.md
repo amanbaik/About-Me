@@ -4,7 +4,8 @@
 <br> <sub>I dont give a </sub>~~FUCK<sub> about other shit talking </sub>
 <br>
 
-**Goals:
+**Goal:
+
 <br> -JS
 <br> -NodeJs
 <br> -JQuery
