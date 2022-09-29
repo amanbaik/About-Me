@@ -1,6 +1,6 @@
 # Hello-World
 **A bit about myself
-/n<sub>Dont talk about F**** C***</sub>
+<br> <sub>Dont talk about F**** C***</sub>
   <sub>I dont give a </sub>~~FUCK<sub> about other shit talking </sub>
   
 **Goals:
