@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        th{
+            text-align:left;
+        }
+    </style>
+    <script>
+
+        function get_age(){
+            const birthdate = document.getElementById('birthday').innerHTML;
+            const birthdateParts = birthdate.split('-');
+            const birthDay = parseInt(birthdateParts[0],10)
+            const birthMonth = parseInt(birthdateParts[1],10) - 1;
+            const birthYear = parseInt(birthdateParts[2],10)
+            
+            const currentDate = new Date();
+            const currentYear = currentDate.getFullYear();
+            const currentMonth = currentDate.getMonth();
+            const currentDay = currentDate.getDate();
+
+            let age = currentYear - birthYear;
+            if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDay < birthDay)) {
+                age--;
+            }
+            document.getElementById('age').innerHTML=age;
+        }
+    </script>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>About Me</title>
+</head>
+<body>
+    <h2>About Me</h2>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>NAME</th>
+                    <td>Khairuzzaman Bin Yahya</td>
+                </tr>
+                <tr>
+                    <th>BIRTHDAY</th>
+                    <td><div id="birthday">09-10-1998</div></td>
+                </tr>
+                <tr>
+                    <th>AGE</th>
+                    <td><div id="age"></div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+        get_age();
+    };
+</script>
+</html>
